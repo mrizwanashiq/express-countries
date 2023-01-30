@@ -7,7 +7,6 @@ const controller = {
       await axios.get("https://vipankumar.com/SmartHealth/api/getCountries")
         .then(function (response) {
           data = response;
-
         })
       return httpResponse.SUCCESS(res, data.data);
     } catch (error) {
